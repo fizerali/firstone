@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+   int a,b,c,flag;
+   scanf("%d",&a);
+   printf("2 ");;
+ //  for(int i=2;i<=9;){
+   for(c=3;c<=a;c+=2)
+   {
+    flag=0;
+      for(b=3;b<=c/2;b++)
+       {if(c%b==0){flag=1;break;}
+       }if(flag==0){printf("%d ",c);}
+   }
+    return 0;
+}
