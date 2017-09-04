@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    char b[100],a;
+    int i=0;
+    scanf("%s",b);
+    while(b[i]!='\0')
+    {a=b[i];
+        if(a>='A' && a<='Z')
+        b[i]+=32;
+        else if(a>='a' && a<='z')
+        b[i]-=32;
+         i++;
+    }
+    printf("%s",b);
+  return 0;
+}
