@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+
+{
+   char a[100];
+
+    int i=0,j=-1,flag=1;
+
+   scanf("%s",&a);
+
+   for(i=0;i<((strlen(a))+2)/2;i++)
+{
+   if(a[i] != a[strlen(a)-i-1])
+   
+{
+   flag=0;
+   
+break;
+ 
+   }}
+   
+if(flag==1)
+{
+   printf("YES");
+}
+    
+else {
+printf("NO");
+}
+    return 0;
+
+}
